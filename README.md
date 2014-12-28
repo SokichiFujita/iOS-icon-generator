@@ -5,7 +5,7 @@ iOS icon generator with gulp
 
 ## Caution
 
-This is a work in progress repository. Currently, it is not intended for general users.
+This is a work in progress repository. Currently, it is itended for limited use case.
 
 
 ## Installation
@@ -40,6 +40,18 @@ This is a work in progress repository. Currently, it is not intended for general
     
     cd gulp-ios-icon-generator
     gulp
+
+4. Check under the ./dist directory
+    - ./dist/appicons
+        - App icon images
+    - ./dist/images
+        - 50x50, 100x100 and 150x150 images
+
+
+## LICENSE
+
+MIT
+
 
 
 
