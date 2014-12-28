@@ -14,7 +14,9 @@ var size = {
         settings:29,
         spotlight:20,
         app:30,
-        portrait:256
+        portrait:256,
+        tabbar:25,
+        toolbar:22
     }
 }
 
@@ -31,10 +33,16 @@ var icons = [
     {size:size.iPhone.portrait*4,   name:"Portrait4x"}
 ];
 
-var images = [
-    {size:50,  name:"1x"},
-    {size:100, name:"2x"},
-    {size:150, name:"3x"}
+var tabbars = [
+    {size:size.iPhone.tabbar*1,  name:"tabbar1x"},
+    {size:size.iPhone.tabbar*2,  name:"tabbar2x"},
+    {size:size.iPhone.tabbar*3,  name:"tabbar3x"}
+];
+
+var toolbars = [
+    {size:size.iPhone.toolbar*1,  name:"toolbar1x"},
+    {size:size.iPhone.toolbar*2,  name:"toolbar2x"},
+    {size:size.iPhone.toolbar*3,  name:"toolbar3x"}
 ];
 
 gulp.task('default', function () {
@@ -55,8 +63,8 @@ gulp.task('default', function () {
             .pipe(gulp.dest('dist/appicons'));
     });
 
-    images.forEach(function(icon){
-        gulp.src('src/images/*.png')
+    tabbars.forEach(function(icon){
+        gulp.src('src/tabbars/*.png')
             .pipe(foreach(function(stream, file){ 
                 return stream
                 .pipe(gm(function(src) {
@@ -69,7 +77,25 @@ gulp.task('default', function () {
                         icon.name
                  }))
              }))
-            .pipe(gulp.dest('dist/images'));
+            .pipe(gulp.dest('dist/tabbars'));
     });
+
+    toolbars.forEach(function(icon){
+        gulp.src('src/toolbars/*.png')
+            .pipe(foreach(function(stream, file){ 
+                return stream
+                .pipe(gm(function(src) {
+                    return src.resize(icon.size, icon.size); 
+                 }))
+                .pipe(rename(function(path){
+                    path.basename = 
+                        path.basename + "_" + 
+                        icon.size + "x" + icon.size + "_" + 
+                        icon.name
+                 }))
+             }))
+            .pipe(gulp.dest('dist/toolbars'));
+    });
+
 });
 

@@ -29,10 +29,13 @@ node_modules
 
 src/appicons/*
 !src/appicons/*.md
-src/images/*
-!src/images/*.md
+src/tabbars/*
+!src/tabbars/*.md
+src/toolbars/*
+!src/toolbars/*.md
 dist/appicons/*
-dist/images/*
+dist/tabbars/*
+dist/toolbars/*
 
 *.png
 *.jpeg
