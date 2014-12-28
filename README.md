@@ -3,25 +3,6 @@ gulp-iOS-icon-generator
 
 iOS icon generator with gulp. Many size icon for app, tabbar, toolbar and navigation bar will be generated.
 
-## Output
-
-### App icons
-
-Generate app icon images for as follows from a 1024x1024 image.
-
-- Settings
-- Spotlight
-- App
-- Portrait for App Store
-
-### Tab bar icons
-
-Generate 1x, 2x and 3x images for tabbar icons from a 3x image.
-
-### Toolbar icons / Navigation bar icons
-
-Generate 1x, 2x and 3x images for tooblar or navigation bar icons from a 3x image.
-
 ## Installation
 
 1. GraphicsMagick
@@ -67,6 +48,28 @@ Generate 1x, 2x and 3x images for tooblar or navigation bar icons from a 3x imag
         - 25x25, 50x50 and 75x75 images.
     - `./dist/toolbar`
         - 22x22, 44x44 and 66x66 images.
+
+## Output Icons
+
+### App icons
+
+Generate app icon images for as follows from a 1024x1024 image.
+
+- Settings
+- Spotlight
+- App
+- Portrait for App Store
+
+### Tab bar icons
+
+Generate 1x, 2x and 3x images for tabbar icons from a 3x image.
+
+### Toolbar icons / Navigation bar icons
+
+Generate 1x, 2x and 3x images for tooblar or navigation bar icons from a 3x image.
+
+
+
 
 ## LICENSE
 
