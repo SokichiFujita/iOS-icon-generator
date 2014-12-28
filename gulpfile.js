@@ -17,12 +17,10 @@ var icons = [
 ];
 
 var images = [
-    {size:50,   name:"1x"},
-    {size:100,   name:"2x"},
-    {size:150,  name:"3x"}
+    {size:50,  name:"1x"},
+    {size:100, name:"2x"},
+    {size:150, name:"3x"}
 ];
-
-
 
 gulp.task('default', function () {
     icons.forEach(function(icon){
@@ -58,8 +56,5 @@ gulp.task('default', function () {
              }))
             .pipe(gulp.dest('dist/images'));
     });
-
 });
-
-
 
