@@ -57,15 +57,15 @@ Generate 1x, 2x and 3x images for tooblar or navigation bar icons from a 3x imag
 
 3. Execute gulp
     
-    cd gulp-ios-icon-generator
-    gulp
+        cd gulp-ios-icon-generator
+     gulp
 
-4. Check under the ./dist directory
-    - ./dist/appicons
+4. Check under the `./dist` directory
+    - `./dist/appicons`
         - App icon images for settings, spotlight, app and portrait.
-    - ./dist/tabbar
+    - `./dist/tabbar`
         - 25x25, 50x50 and 75x75 images.
-    - ./dist/toolbar
+    - `./dist/toolbar`
         - 22x22, 44x44 and 66x66 images.
 
 ## LICENSE
