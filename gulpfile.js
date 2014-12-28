@@ -16,9 +16,17 @@ var icons = [
     {size:1024, name:"iPhonePortrait4x"}
 ];
 
+var images = [
+    {size:50,   name:"1x"},
+    {size:100,   name:"2x"},
+    {size:150,  name:"3x"}
+];
+
+
+
 gulp.task('default', function () {
     icons.forEach(function(icon){
-        gulp.src('./src/appicons/*.png')
+        gulp.src('src/appicons/*.png')
             .pipe(foreach(function(stream, file){ 
                 return stream
                 .pipe(gm(function(src) {
@@ -33,9 +41,25 @@ gulp.task('default', function () {
              }))
             .pipe(gulp.dest('dist/appicons'));
     });
+
+    images.forEach(function(icon){
+        gulp.src('src/images/*.png')
+            .pipe(foreach(function(stream, file){ 
+                return stream
+                .pipe(gm(function(src) {
+                    return src.resize(icon.size, icon.size); 
+                 }))
+                .pipe(rename(function(path){
+                    path.basename = 
+                        path.basename + "_" + 
+                        icon.size + "x" + icon.size + "_" + 
+                        icon.name
+                 }))
+             }))
+            .pipe(gulp.dest('dist/images'));
+    });
+
 });
-
-
 
 
 
