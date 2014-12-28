@@ -27,12 +27,12 @@ node_modules
 # Users Environment Variables
 .lock-wscript
 
-src/appicons
+src/appicons/
 !src/appicons/*.md
-src/images
+src/images/
 !src/images/*.md
-dist/appicons
-dist/images
+dist/appicons/
+dist/images/
 
 
 
