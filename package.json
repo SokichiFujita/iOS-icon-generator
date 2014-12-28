@@ -18,6 +18,8 @@
   "homepage": "https://github.com/sl2/gulp-iOS-icon-generator",
   "devDependencies": {
     "gulp": "^3.8.10",
-    "gulp-gm": "0.0.7"
+    "gulp-foreach": "^0.1.0",
+    "gulp-gm": "0.0.7",
+    "gulp-rename": "^1.2.0"
   }
 }
