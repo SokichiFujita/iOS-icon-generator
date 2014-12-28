@@ -3,10 +3,25 @@ gulp-iOS-icon-generator
 
 iOS icon generator with gulp
 
-## Caution
 
-This is a work in progress repository. Currently, it is itended for limited use case.
+## Output
 
+### App icons
+
+Generate app icon images for as follows.
+
+- Settings
+- Spotlight
+- App
+- Portrait for App Store
+
+### Resources (work in progress)
+
+Generate 1x, 2x, 3x images for Xcode's "Asset Catalog".
+
+- 1x
+- 2x
+- 3x
 
 ## Installation
 
@@ -43,9 +58,9 @@ This is a work in progress repository. Currently, it is itended for limited use 
 
 4. Check under the ./dist directory
     - ./dist/appicons
-        - App icon images
+        - App icon images for settings, spotlight, app and portrait.
     - ./dist/images
-        - 50x50, 100x100 and 150x150 images
+        - 50x50, 100x100 and 150x150 images.
 
 
 ## LICENSE
