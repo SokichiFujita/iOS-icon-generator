@@ -23,17 +23,17 @@ iOS icon generator with gulp. Generate app, tabbar, toolbar and navigationbar ic
 
 1. Put an app icon image into ./src/appicons.
     
-    - Format : .png
+    - Format : PNG
     - Size : 1024 x 1024
 
 2. Put tabbar icon images into ./src/tabbars
 
-    - Format : .png
+    - Format : PNG
     - Size : 3x
 
 2. Put toolbar icon images into ./src/toolbars
     
-    - Format : .png
+    - Format : PNG
     - Size : for 3x
 
 3. Execute gulp
