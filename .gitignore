@@ -33,16 +33,20 @@ src/tabbars/*
 !src/tabbars/*.md
 src/toolbars/*
 !src/toolbars/*.md
+src/launchimages/*
+!src/launchimages/*.md
 dist/appicons/*
 dist/tabbars/*
 dist/toolbars/*
+dist/launchimages/*
 
 *.png
 *.jpeg
 *.jpg
 *.psd
 *.gif
-
+*.ai
+*.pxm
 
 
 

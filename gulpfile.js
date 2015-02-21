@@ -3,11 +3,6 @@ var rename = require('gulp-rename');
 var foreach = require('gulp-foreach');
 var gm = require('gulp-gm');
 
-var paths = {
-    appicons:'src/appicons*.png',
-    images:'src/images*.png'
-};
-
 // base size of iOSX s.t. X>=7
 var size = {
     iPhone:{
@@ -45,6 +40,13 @@ var toolbars = [
     {size:size.iPhone.toolbar*3,  name:"toolbar3x"}
 ];
 
+var launchimages = [
+    {sizeW:640, sizeH:960, name:"iPhone4s"},
+    {sizeW:640, sizeH:1136, name:"iPhone5"},
+    {sizeW:750, sizeH:1334, name:"iPhone6"},
+    {sizeW:1242, sizeH:2208, name:"iPhone6+"}
+];
+
 gulp.task('default', function () {
     icons.forEach(function(icon){
         gulp.src('src/appicons/*.png')
@@ -54,11 +56,8 @@ gulp.task('default', function () {
                     return src.resize(icon.size, icon.size); 
                  }))
                 .pipe(rename(function(path){
-                    path.basename = 
-                        path.basename + "_" + 
-                        icon.size + "x" + icon.size + "_" + 
-                        icon.name
-                 }))
+                        path.basename = path.basename + "_" + icon.size + "x" + icon.size + "_" + icon.name
+                }))
              }))
             .pipe(gulp.dest('dist/appicons'));
     });
@@ -96,6 +95,27 @@ gulp.task('default', function () {
              }))
             .pipe(gulp.dest('dist/toolbars'));
     });
+
+    launchimages.forEach(function(icon){
+        gulp.src('src/launchimages/*.png')
+            .pipe(foreach(function(stream, file){ 
+                return stream
+                .pipe(gm(function(src) {
+                    return src.resize(icon.sizeH, icon.sizeH); 
+                 }))
+                .pipe(gm(function(src) {
+                    return src.crop(icon.sizeW, icon.sizeH, (icon.sizeH-icon.sizeW)/2, 0); 
+                 }))
+                .pipe(rename(function(path){
+                    path.basename = 
+                        path.basename + "_" + 
+                        icon.sizeW + "x" + icon.sizeH + "_" + 
+                        icon.name
+                 }))
+             }))
+            .pipe(gulp.dest('dist/launchimages'));
+    });
+
 
 });
 
