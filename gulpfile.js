@@ -44,7 +44,9 @@ var launchimages = [
     {sizeW:640, sizeH:960, name:"iPhone4s"},
     {sizeW:640, sizeH:1136, name:"iPhone5"},
     {sizeW:750, sizeH:1334, name:"iPhone6"},
-    {sizeW:1242, sizeH:2208, name:"iPhone6+"}
+    {sizeW:1242, sizeH:2208, name:"iPhone6+"},
+    {sizeW:768, sizeH:1024, name:"iPad"},
+    {sizeW:1536, sizeH:2048, name:"iPadRetina"}
 ];
 
 gulp.task('default', function () {

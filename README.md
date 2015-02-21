@@ -83,6 +83,11 @@ gulp-iOS-icon-generator
 - iPhone5
 - iPhone6
 - iPhone6 Plus
+- iPad mini
+- iPad
+- iPad mini (Retina)
+- iPad (Retina)
+
 
 ## LICENSE
 
