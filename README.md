@@ -1,19 +1,19 @@
 gulp-iOS-icon-generator
 =======================
 
-iOS icon generator with gulp. Many size icon for app, tabbar, toolbar and navigation bar will be generated.
+iOS icon generator with gulp. Generate app, tabbar, toolbar and navigationbar icons.
 
 ## Installation
 
-1. GraphicsMagick
+1. Install GraphicsMagick
 
         brew install graphicsmagick
 
-2. Gulp
+2. Install Gulp
 
         npm install -g gulp
 
-3. This app
+3. Install this app
 
         git clone https://github.com/sl2/gulp-iOS-icon-generator.git
         cd gulp-ios-icon-generator
@@ -23,18 +23,18 @@ iOS icon generator with gulp. Many size icon for app, tabbar, toolbar and naviga
 
 1. Put an app icon image into ./src/appicons.
     
-    - Input Image Format : .png
-    - Input Image Size : bigger than 1024 x 1024
+    - Format : .png
+    - Size : 1024 x 1024
 
 2. Put tabbar icon images into ./src/tabbars
 
-    - Input Image Format : .png
-    - Input Image Size : for 3x
+    - Format : .png
+    - Size : 3x
 
 2. Put toolbar icon images into ./src/toolbars
     
-    - Input Image Format : .png
-    - Input Image Size : for 3x
+    - Format : .png
+    - Size : for 3x
 
 3. Execute gulp
     
@@ -42,18 +42,17 @@ iOS icon generator with gulp. Many size icon for app, tabbar, toolbar and naviga
         gulp
 
 4. Check under the `./dist` directory
+
     - `./dist/appicons`
-        - App icon images for settings, spotlight, app and portrait.
+        - icons for settings, spotlight, app and portrait
     - `./dist/tabbar`
-        - 25x25, 50x50 and 75x75 images.
+        - 1x(25x25), 2x(50x50) and 3x(75x75) images
     - `./dist/toolbar`
-        - 22x22, 44x44 and 66x66 images.
+        - 1x(22x22), 2x(44x44) and 3x(66x66) images
 
 ## Output Icons
 
 ### App icons
-
-Generate app icon images for as follows from a 1024x1024 image.
 
 - Settings
 - Spotlight
@@ -62,14 +61,15 @@ Generate app icon images for as follows from a 1024x1024 image.
 
 ### Tab bar icons
 
-Generate 1x, 2x and 3x images for tabbar icons from a 3x image.
+- 1x icons
+- 2x icons
+- 3x icons
 
 ### Toolbar icons / Navigation bar icons
 
-Generate 1x, 2x and 3x images for tooblar or navigation bar icons from a 3x image.
-
-
-
+- 1x icons
+- 2x icons
+- 3x icons
 
 ## LICENSE
 
