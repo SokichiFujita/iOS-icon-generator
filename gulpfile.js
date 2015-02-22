@@ -7,11 +7,15 @@ var gm = require('gulp-gm');
 var size = {
     iPhone:{
         settings:29,
-        spotlight:20,
-        app:30,
+        spotlight:40,
+        app:60,
         portrait:256,
         tabbar:25,
         toolbar:22
+    },
+    iPad:{
+        spotlight:40,
+        app:76
     }
 }
 
@@ -22,8 +26,12 @@ var icons = [
     {size:size.iPhone.settings*3,   name:"Settings3x"},
     {size:size.iPhone.spotlight*2,  name:"Spotlight2x"},
     {size:size.iPhone.spotlight*3,  name:"Spotlight3x"},
+    {size:size.iPad.spotlight*1,    name:"iPad_Spotlight1x"},
+    {size:size.iPad.spotlight*2,    name:"iPad_Spotlight2x"},
     {size:size.iPhone.app*2,        name:"App2x"},
     {size:size.iPhone.app*3,        name:"App3x"},
+    {size:size.iPad.app*1,          name:"iPad_App1x"},
+    {size:size.iPad.app*2,          name:"iPad_App2x"},
     {size:size.iPhone.portrait*2,   name:"Portrait2x"},
     {size:size.iPhone.portrait*4,   name:"Portrait4x"}
 ];
