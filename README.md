@@ -1,59 +1,59 @@
-gulp-iOS-icon-generator
+iOS-icon-generator
 =======================
 
-- Generate icon images of app, tabbar, toolbar and navigationbar for iPhone and iPad.
-- Generate launch images for iPhone and iPad.
+Generate multiple size of icons for iPhone (4s - 11 / 11pro) and iPad app from an image. Launch image is also supported.
 
-## Installation
+- Icon: app, tabbar, toolbar, navigation bar
+- launch images
 
-1. Install GraphicsMagick
+## Usage
+
+1. Install Node.js v6.x - v10.x
+
+2. Install GraphicsMagick
 
         brew install graphicsmagick
 
-2. Clone this app
+3. Clone this app
 
         git clone https://github.com/sl2/gulp-iOS-icon-generator.git
         cd gulp-iOS-icon-generator
         npm install
 
-3. Execute
-        
-        npx gulp
-
-## Usage
-
-1. Put an app icon into ./src/appicons.
+4. Put an app icon into ./src/appicons.
  
     - Format : PNG
     - Size : 1024 x 1024 is recommended
 
-2. Put tabbar icons into ./src/tabbars
+5. Put tabbar icons into ./src/tabbars
 
     - Format : PNG
     - Size : 3x (75 x 75) is recommended
 
-3. Put toolbar and navigationbar icons into ./src/toolbars
+6. Put toolbar and navigationbar icons into ./src/toolbars
     
     - Format : PNG
     - Size : 3x (66 x 66) is recommended
 
-4. Put a launch image into ./src/launchimages
+7. Put a launch image into ./src/launchimages
  
     - Format : PNG
     - Size : 2028 x 2028 is recommended 
 
-5. Execute gulp
+8. Execute gulp
     
-        gulp
+        npx gulp
 
-6. Check under the `./dist` directory
+9. Check under the `./dist` directory
 
     - `./dist/appicons`
-        - icons for settings, spotlight, app and portrait
-    - `./dist/tabbar`
+        - icon images for settings, spotlight, app and portrait
+    - `./dist/tabbars`
         - 1x, 2x and 3x images
-    - `./dist/toolbar`
+    - `./dist/toolbars`
         - 1x, 2x and 3x images
+    - `./dist/launchimages`
+        - launch images for iOS and iPad
 
 ## Output Icons
 
@@ -78,17 +78,25 @@ gulp-iOS-icon-generator
 
 ### Launch images (portrait only)
 
-- iPhone4s
-- iPhone5
-- iPhone6
-- iPhone6 Plus
-- iPhoneX
-- iPhoneXS Max / XR
+- iPhone 4s
+- iPhone 5
+- iPhone 6
+- iPhone 6 Plus
+- iPhone 7
+- iPhone 7 Plus
+- iPhone 8
+- iPhone 8 Plus
+- iPhone SE
+- iPhone X / XS
+- iPhone XR
+- iPhone XS Max
+- iPhone 11
+- iPhone 11 Pro
 - iPad mini
 - iPad
 - iPad mini (Retina)
 - iPad (Retina)
-
+- iPad Pro
 
 ## LICENSE
 
