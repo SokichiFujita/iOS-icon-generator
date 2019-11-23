@@ -17,7 +17,8 @@ var size = {
     },
     iPad:{
         spotlight:40,
-        app:76
+        app:76,
+        proapp:83.5
     }
 }
 
@@ -37,6 +38,7 @@ var icons = [
     {size:size.iPhone.app*3,        name:"App3x"},
     {size:size.iPad.app*1,          name:"iPad_App1x"},
     {size:size.iPad.app*2,          name:"iPad_App2x"},
+    {size:size.iPad.proapp*2,          name:"iPadPro_App2x"},
     {size:size.iPhone.portrait*2,   name:"Portrait2x"},
     {size:size.iPhone.portrait*4,   name:"Portrait4x"},
     {size:size.iPhone.store*1,   name:"Store1x"}
