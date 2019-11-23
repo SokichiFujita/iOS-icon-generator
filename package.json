@@ -1,7 +1,7 @@
 {
-  "name": "gulp-ios-icon-generator",
-  "version": "0.1.0",
-  "description": "gulp-iOS-icon-generator",
+  "name": "ios-icon-generator",
+  "version": "0.2.0",
+  "description": "iOS-icon-generator",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/SokichiFujita/gulp-iOS-icon-generator.git"
+    "url": "https://github.com/SokichiFujita/iOS-icon-generator.git"
   },
   "author": "sl2",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SokichiFujita/gulp-iOS-icon-generator/issues"
+    "url": "https://github.com/SokichiFujita/iOS-icon-generator/issues"
   },
-  "homepage": "https://github.com/SokichiFujita/gulp-iOS-icon-generator",
+  "homepage": "https://github.com/SokichiFujita/iOS-icon-generator",
   "dependencies": {
     "gulp": "^3.8.0",
     "gulp-foreach": "^0.1.0",
