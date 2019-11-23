@@ -84,6 +84,8 @@ gulp-iOS-icon-generator
 - iPhone5
 - iPhone6
 - iPhone6 Plus
+- iPhoneX
+- iPhoneXS Max / XR
 - iPad mini
 - iPad
 - iPad mini (Retina)

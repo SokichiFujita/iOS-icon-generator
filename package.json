@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "engines": {
+    "node": ">=6.x <=10.x"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/sl2/gulp-iOS-icon-generator.git"
@@ -22,5 +25,4 @@
     "gulp-gm": "0.0.7",
     "gulp-rename": "^1.2.0"
   }
-
 }
