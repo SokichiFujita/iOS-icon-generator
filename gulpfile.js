@@ -61,6 +61,7 @@ var launchimages = [
     {sizeW:1242, sizeH:2208, name:"iPhone6+"},
     {sizeW:1242, sizeH:2208, name:"iPhone6+"},
     {sizeW:1125, sizeH:2436, name:"iPhoneX"},
+    {sizeW:828, sizeH:1792, name:"iPhoneXR"},
     {sizeW:1242, sizeH:2688, name:"iPhoneXsMax"},
     {sizeW:768, sizeH:1024, name:"iPad"},
     {sizeW:1536, sizeH:2048, name:"iPadRetina"}
