@@ -1,10 +1,8 @@
 gulp-iOS-icon-generator
 =======================
 
-- iOS's icon and launcimage generator. 
-    - Generate app, tabbar, toolbar and navigationbar icons for iPhone 4s, 5, 6, 6 Plus.
-    - Generate launch images for iPhone 4s, 5, 6, 6 Plus.
-    - Support for iOS7 and iOS8
+- Generate icon images of app, tabbar, toolbar and navigationbar for iPhone and iPad.
+- Generate launch images for iPhone and iPad.
 
 ## Installation
 
@@ -12,15 +10,15 @@ gulp-iOS-icon-generator
 
         brew install graphicsmagick
 
-2. Install Gulp
-
-        npm install -g gulp
-
-3. Install this app
+2. Clone this app
 
         git clone https://github.com/sl2/gulp-iOS-icon-generator.git
         cd gulp-iOS-icon-generator
         npm install
+
+3. Execute
+        
+        npx gulp
 
 ## Usage
 
