@@ -8,10 +8,12 @@ var size = {
     iPhone:{
         settings:29,
         spotlight:40,
+        notification:20,
         app:60,
         portrait:256,
         tabbar:25,
-        toolbar:22
+        toolbar:22,
+        store:1024
     },
     iPad:{
         spotlight:40,
@@ -26,6 +28,9 @@ var icons = [
     {size:size.iPhone.settings*3,   name:"Settings3x"},
     {size:size.iPhone.spotlight*2,  name:"Spotlight2x"},
     {size:size.iPhone.spotlight*3,  name:"Spotlight3x"},
+    {size:size.iPhone.notification*1,  name:"Notification1x"},
+    {size:size.iPhone.notification*2,  name:"Notification2x"},
+    {size:size.iPhone.notification*3,  name:"Notification3x"},
     {size:size.iPad.spotlight*1,    name:"iPad_Spotlight1x"},
     {size:size.iPad.spotlight*2,    name:"iPad_Spotlight2x"},
     {size:size.iPhone.app*2,        name:"App2x"},
@@ -33,7 +38,8 @@ var icons = [
     {size:size.iPad.app*1,          name:"iPad_App1x"},
     {size:size.iPad.app*2,          name:"iPad_App2x"},
     {size:size.iPhone.portrait*2,   name:"Portrait2x"},
-    {size:size.iPhone.portrait*4,   name:"Portrait4x"}
+    {size:size.iPhone.portrait*4,   name:"Portrait4x"},
+    {size:size.iPhone.store*1,   name:"Store1x"}
 ];
 
 var tabbars = [
@@ -53,6 +59,9 @@ var launchimages = [
     {sizeW:640, sizeH:1136, name:"iPhone5"},
     {sizeW:750, sizeH:1334, name:"iPhone6"},
     {sizeW:1242, sizeH:2208, name:"iPhone6+"},
+    {sizeW:1242, sizeH:2208, name:"iPhone6+"},
+    {sizeW:1125, sizeH:2436, name:"iPhoneX"},
+    {sizeW:1242, sizeH:2688, name:"iPhoneXsMax"},
     {sizeW:768, sizeH:1024, name:"iPad"},
     {sizeW:1536, sizeH:2048, name:"iPadRetina"}
 ];
@@ -90,7 +99,7 @@ gulp.task('default', function () {
     });
 
     toolbars.forEach(function(icon){
-        gulp.src('src/toolbars/*.png')
+      gulp.src('src/toolbars/*.png')
             .pipe(foreach(function(stream, file){ 
                 return stream
                 .pipe(gm(function(src) {
@@ -107,7 +116,7 @@ gulp.task('default', function () {
     });
 
     launchimages.forEach(function(icon){
-        gulp.src('src/launchimages/*.png')
+      gulp.src('src/launchimages/*.png')
             .pipe(foreach(function(stream, file){ 
                 return stream
                 .pipe(gm(function(src) {
